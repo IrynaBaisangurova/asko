@@ -104,7 +104,7 @@ padding:30px 130px;
     line-height: 56px;
     font-weight: bold;
     text-align: center;  
-     max-width: 460px;
+     max-width: 550px;
      margin: 0 auto;   
     color: #2B292D;
    padding-bottom: 30px;
@@ -121,8 +121,9 @@ padding-bottom: 24px;
 .text_grid{
     font-size: 24px;
     line-height: 34px;  
-    max-width: 460px; 
+    max-width: 550px;
     margin: 0 auto;
+    text-align: center;
     color: #2B292D;
 }
 .button1{
@@ -151,48 +152,62 @@ background:linear-gradient(180deg);
     margin: 110px 130px;
     display: grid; 
     grid-template-columns:repeat(4,1fr);
-    grid-template-rows:repeat(1,1fr);
     gap: 30px ;
-    height: 65vh;
+    /* height: 65vh; */
     }
 .item{
         background:white;
-        width: 262px;
-        height: 300px;
         border-radius: 8px;
-        position: relative;
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+        color: #2B292D;
     }
-    .item :hover{
+.item :hover{
         background:#3040C4;
         color: #FFFFFF;
         transition: 1s;
         cursor:pointer;
     }
+.title_grid1{
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: bold;
+    text-align: center;  
+     max-width: 488px;
+     margin: 0 auto;   
+    color: #2B292D;
+   padding-bottom: 30px;
+}
+.text_grid1{
+    font-size: 24px;
+    line-height: 34px;  
+    max-width: 460px; 
+    margin: 0 auto;
+    color: #2B292D;
+    text-align: center;
+}
+.section-grid1{
+background: #FFFFFF;
+}
+.grid1-container{
+    margin: 70px 109px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+}
+.item-one:nth-child(1), .item-one:nth-child(2){
+    grid-column: span 1;
+}
+ 
+.item-one:nth-child(3), .item-one:nth-child(4){
+    grid-row: span 2;
+    grid-column: span 1;
+}
 
-    .item_img{
-        padding-top: 22px;
-        padding-bottom: 83px;
-        padding-left: 62px;
-        padding-right: 62px;
-    }
-    .item_name{
-        display: flexbox;
-        position: absolute;
-        font-size: 22px;
-line-height: 28px;
-text-align: center;
-color: #2B292D;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-margin-top: 235px;
-}
-.item_name :hover{
-    color: #FFFFFF;
-    transition: 1s;
-    cursor:pointer;
-}
+
+
    
 
 
